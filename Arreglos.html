@@ -1,0 +1,147 @@
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ArreglosInformacionPersonal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+
+  <style>
+
+  fieldset{
+    border: solid;
+    border-radius: 20px;
+    font-size: large;
+    margin-top: 20px;
+    }
+  .Datos{
+      border: solid 2px gray;
+      border-radius: 8px;
+      background-color: #C0C89C;
+      padding: 1px;
+      margin: 10px;
+    }
+  .general{
+      border: 5px grey solid;
+      margin: 20px;
+      padding: 10px;
+      border-radius: 10px;
+  }
+  #c1{
+    border: 3px solid;
+    color: black;
+    border-radius: 20px;
+    text-align: center
+  }
+  h1{
+   text-align: center
+  }
+  </style>
+
+  <body>
+    <form>
+     <fieldset>
+      <legend>Información Personal:</legend>
+      <a class="waves-effect waves-light btn" onclick="grados()">Grados cursados</a>
+      <a class="waves-effect waves-light btn" onclick="progra()">Programación</a>
+      <a class="waves-effect waves-light btn" onclick="info()">Informática</a>
+    </fieldset>
+    </form>
+
+  </body>
+  <script type="text/javascript">
+
+  function grados(){
+    var grados=
+  ["Liceo Esquipulteco",
+  "Liceo Esquipulteco",
+  "Liceo Esquipulteco",
+  "Centro Universitario de Oriente (CUNORI)"];
+
+  var dat1 = grados[0];
+  var dat2 = grados[1];
+  var dat3 = grados[2];
+  var dat4 = grados[3];
+
+
+  document.write("<h4>"+"Grados cursados"+ "</h4>");
+  document.write("<li>" + dat1 + "</li>");
+  document.write("<li>" + dat2 + "</li>");
+  document.write("<li>" + dat3 + "</li>");
+  document.write("<li>" + dat4 + "</li>");
+
+  alert(dat1);
+  alert(dat2);
+  alert(dat3);
+  alert(dat4);
+}
+  try{
+    grados();
+  }
+  catch(error){
+    console.error(error);
+  }
+
+  function progra(){
+    var grados=
+  ["PHP",
+  "JAVA",
+  "JAVASCRIPT",
+  "C++"];
+
+  var dat1 = grados[0];
+  var dat2 = grados[1];
+  var dat3 = grados[2];
+  var dat4 = grados[3];
+
+
+  document.write("<h4>"+"Lenguajes de Programación"+ "</h4>");
+  document.write("<li>" + dat1 + "</li>");
+  document.write("<li>" + dat2 + "</li>");
+  document.write("<li>" + dat3 + "</li>");
+  document.write("<li>" + dat4 + "</li>");
+
+  alert(dat1);
+  alert(dat2);
+  alert(dat3);
+  alert(dat4);
+}
+  try{
+    progra();
+  }
+  catch(error){
+    console.error(error);
+  }
+  function info(){
+    var grados=
+  ["Su sintaxis es similar a la usada en Java y C",
+  "No se necesita tener instalado ningún Framework",
+  "Javascript no es un lenguaje que necesite que sus programas se compilen",
+  "Javascript no es orientado a objetos"];
+
+  var dat1 = grados[0];
+  var dat2 = grados[1];
+  var dat3 = grados[2];
+  var dat4 = grados[3];
+
+
+  document.write("<h4>"+"Características JavaScript"+ "</h4>");
+  document.write("<li>" + dat1 + "</li>");
+  document.write("<li>" + dat2 + "</li>");
+  document.write("<li>" + dat3 + "</li>");
+  document.write("<li>" + dat4 + "</li>");
+
+  alert(dat1);
+  alert(dat2);
+  alert(dat3);
+  alert(dat4);
+}
+  try{
+    info();
+  }
+  catch(error){
+    console.error(error);
+  }
+  </script>
+
+</html>
